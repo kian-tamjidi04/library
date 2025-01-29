@@ -13,6 +13,10 @@ header {
     background-color: aquamarine;
     padding-top: 10px;
     padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
 }
 
 .library-book {
@@ -22,4 +26,13 @@ header {
     border-color: black;
     border-style: dotted;
     margin-left: 10px;
+}
+
+header button {
+    border-radius: 10px;
+    border-style: solid;
+}
+
+header button:hover {
+    background-color: lightblue;
 }
