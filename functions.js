@@ -20,6 +20,10 @@ function addBookToLibrary(title, author, pages, isRead) {
   myLibrary.push(newBook);
 };
 
+addBookToLibrary("Kian", "Kian", 100, true);
+addBookToLibrary("Kian", "Kian", 100, true);
+addBookToLibrary("Kian", "Kian", 100, true);
+
 // Write a function that loops through the array and displays each book on the page. 
 // You can display them in some sort of table, or each on their own “card”. It might 
 // help for now to manually add a few books to your array so you can see the display.
@@ -35,8 +39,8 @@ function displayBooks() {
     library.innerHTML = "";
     myLibrary.forEach(book => {
         // Create a new card for each book
-        const libBook = document.createElement(".div");
-        libBook.setAttribute("class", ".library-book");
+        const libBook = document.createElement("div");
+        libBook.setAttribute("class", "library-book");
 
         // Add info about book to the card
         const title = document.createElement("div");

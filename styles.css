@@ -14,3 +14,12 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.library-book {
+    padding: 15px;
+    background-color: aliceblue;
+    width: 20%;
+    border-color: black;
+    border-style: dotted;
+    margin-left: 10px;
+}
