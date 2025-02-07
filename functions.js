@@ -20,13 +20,20 @@ function addBookToLibrary(title, author, pages, isRead) {
   myLibrary.push(newBook);
 };
 
-addBookToLibrary("Kian", "Kian", 100, true);
-addBookToLibrary("Kian", "Kian", 100, true);
-addBookToLibrary("Kian", "Kian", 100, true);
+addBookToLibrary("Alex Rider", "Kian", 150, true);
+addBookToLibrary("Harry Potter", "Kian", 700, true);
+addBookToLibrary("Bible", "Kian", 20, false);
 
 function addBook() {
 
 };
+
+// Add a “New Book” button that brings up a form allowing users to input the details 
+// for the new book and add it to the library: author, title, number of pages, whether 
+// it’s been read and anything else you might want. How you decide to display this form 
+// is up to you. For example, you may wish to have a form show in a sidebar 
+
+document.getElementById("add-book-btn").addEventListener("click", addBook);
 
 function displayBooks() {
     library.innerHTML = "";
@@ -65,12 +72,5 @@ function displayBooks() {
         library.appendChild(libBook)
     })
 };
-
-// Add a “New Book” button that brings up a form allowing users to input the details 
-// for the new book and add it to the library: author, title, number of pages, whether 
-// it’s been read and anything else you might want. How you decide to display this form 
-// is up to you. For example, you may wish to have a form show in a sidebar 
-
-document.getElementById("add-book-btn").addEventListener("click", addBook);
 
 displayBooks();
