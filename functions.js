@@ -33,7 +33,7 @@ function addBook() {
 // it’s been read and anything else you might want. How you decide to display this form 
 // is up to you. For example, you may wish to have a form show in a sidebar 
 
-document.getElementById("add-book-btn").addEventListener("click", addBook);
+// document.getElementById("add-book-btn").addEventListener("click", addBook);
 
 function displayBooks() {
     library.innerHTML = "";
