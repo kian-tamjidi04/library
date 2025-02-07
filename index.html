@@ -8,6 +8,25 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        
+        <div class="container">
+            <div class="sidebar">
+                <h1>Add New Book</h1>
+                <form onsubmit="return addBook()">
+                    Title: <input type="text" name="title"> <br>
+                    Author: <input name="author" type="text"> <br>
+                    Number of Pages: <input type="number"> <br>
+                    Have you finished the book?: <input type="checkbox">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="main-content">
+                <div class="header">
+                    <h1>My Library</h1>
+                </div>
+                <div class="library">
+
+                </div>
+            </div>
+        </div>
     </body>
 </html>
